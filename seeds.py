@@ -21,22 +21,22 @@ db.commit()
 
 # insert posts
 db.add_all([
-  Post(title='Donec posuere metus vitae ipsum', post_url='https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png', user_id=1),
-  Post(title='Morbi non quam nec dui luctus rutrum', post_url='https://nasa.gov/donec.json', user_id=1),
-  Post(title='Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue', post_url='https://europa.eu/parturient/montes/nascetur/ridiculus/mus/etiam/vel.aspx', user_id=2),
+  Post(title='Our tech problems have become more complex. What do you think?', post_url='https://www.nytimes.com/2022/11/02/insider/personal-tech-brian-chen.html', user_id=1),
+  Post(title='You wonder, when did this conversation become so hilarious? What am I missing?', post_url='https://www.npr.org/2020/09/25/916997530/laughter-the-best-medicine', user_id=1),
+  Post(title='Small business owners - how they live, how they work, what influences them', post_url='https://www.beyondthetodolist.com/tara-mcmullin-on-changing-your-approach-to-goal-setting/', user_id=2),
   Post(title='The ban on semiconductor', post_url='https://www.vox.com/world/2022/11/5/23440525/biden-administration-semiconductor-export-ban-china', user_id=3),
-  Post(title='Pellentesque eget nunc', post_url='http://google.ca/nam/nulla/integer.aspx', user_id=4)
+  Post(title='Following successful completion of Artemis I recovery operations', post_url='https://www.nasa.gov/feature/i-am-artemis-christine-st-germain', user_id=4)
 ])
 
 
 db.commit()
 # insert comments
 db.add_all([
-  Comment(comment_text='Nunc rhoncus dui vel sem.', user_id=1, post_id=2),
-  Comment(comment_text='Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', user_id=1, post_id=3),
-  Comment(comment_text='Aliquam erat volutpat. In congue.', user_id=2, post_id=1),
-  Comment(comment_text='Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', user_id=2, post_id=3),
-  Comment(comment_text='In hac habitasse platea dictumst.', user_id=3, post_id=3)
+  Comment(comment_text='I love this convo! Laughter is the best treatment!', user_id=1, post_id=2),
+  Comment(comment_text='Tara is the host of What Works, a great podcast!', user_id=1, post_id=3),
+  Comment(comment_text='Teach companies are dominating all sectors and I think that creates more jobs but it also makes us to dependent.', user_id=2, post_id=1),
+  Comment(comment_text='What a great Podcast!', user_id=2, post_id=3),
+  Comment(comment_text='Here work was fetured on The Huffington Post, you go Tara!', user_id=3, post_id=3)
 ])
 
 db.commit()

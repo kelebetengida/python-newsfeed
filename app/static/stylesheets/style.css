@@ -1,21 +1,30 @@
 * {
   box-sizing: border-box;
-  
+  background-color: #FDEE30;
 }
 
+@media (max-width: 750px) {
+  #background-video { display: none; }
+  body {
+    background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+    background-size: cover;
+  }
+}
 body, html {
   height: 100%;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  color: #1D2228;
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #1D2228;
   font-weight: bold;
   transition: color .1s;
+  font-size:large;
+  text-shadow: #1D2228;
 }
 
 a:hover {
@@ -98,7 +107,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #1D2228;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -126,7 +135,6 @@ main {
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
 }
 
 .edit-link {

@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Just Tech News</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  
 </head>
 
 <body>
   <div class="wrapper">
+    
     <header>
       <h1>
         <a href="/">Just Tech News</a>
@@ -23,6 +25,10 @@
         {% endif %}
       </nav>
     </header>
+    <div>
+      <h1>Just Tech News, is a platform where users can post, upvote, and comment on links to news articles.</h1>
+      <i>Please be respectful of others view on this platform</i>
+    </div>
     <main>
       {% block body %}{% endblock %}
     </main>
@@ -34,6 +40,7 @@
   {% if loggedIn %}
   <script src="/javascript/logout.js"></script>
   {% endif %}
+ 
 </body>
 
 </html>
