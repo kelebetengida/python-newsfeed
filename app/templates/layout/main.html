@@ -16,6 +16,7 @@
       <h1>
         <a href="/">Just Tech News</a>
       </h1>
+      
       <nav>
         {% if loggedIn == True %}
         <a href="/dashboard">dashboard</a>
@@ -25,9 +26,10 @@
         {% endif %}
       </nav>
     </header>
-    <div>
-      <h1>Just Tech News, is a platform where users can post, upvote, and comment on links to news articles.</h1>
-      <i>Please be respectful of others view on this platform</i>
+    
+    <div class="image">
+      <h1 style="text-align:center;"><br/><br/>Just Tech News, is a platform where users can post, upvote, and comment on links to news articles.<br/><i style="text-align:center">Please be respectful of others view on this platform<br/></i><br/><br/><br/></h1>
+      
     </div>
     <main>
       {% block body %}{% endblock %}
